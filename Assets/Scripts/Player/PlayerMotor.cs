@@ -32,6 +32,7 @@ public class PlayerMotor : MonoBehaviour
     void Start()
     {
         controller  = GetComponent<CharacterController>();
+        Pause();
     }
 
     // Update is called once per frame
@@ -115,10 +116,22 @@ public class PlayerMotor : MonoBehaviour
 
     public void SeenPlayer()
     {
+        /*
         Vector3 checkPoint = new Vector3(-2, 5, -5); // gia ta kanonika checkpoints pinakas Vector 3 kai analoga ti fasi tou paixnidiou tha kanei teleport se auto to index
         controller.enabled = false;
         transform.position = checkPoint;
-        controller.enabled = true;
+        controller.enabled = true;*/
+        textComponent.enabled = true;
+        textComponent.text = "You were seen !";
+        StartCoroutine(ShowMessage());
+
+    }
+
+     public IEnumerator ShowMessage()
+    {
+         
+          yield return new WaitForSeconds(2);
+          textComponent.text = string.Empty;
     }
 
     public void CantMove()

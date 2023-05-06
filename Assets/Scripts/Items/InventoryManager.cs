@@ -27,9 +27,12 @@ public class InventoryManager : MonoBehaviour
     private GameObject obj2;
     private GameObject obj3;
     private GameObject ring;
-    private Item wand;
+    public GameObject woman;
+    public Item wand;
+    private bool crafted = false;
 
     private ScriptableObject sobj;
+    private DialogueNPC dial;
 
     private void Awake()
     {
@@ -116,13 +119,7 @@ public class InventoryManager : MonoBehaviour
     {
         Debug.Log("Inside FindInventoryItem");
 
-        for(int i = 0; i < Items.Count; i++) // if item already exists in inventory
-        {
-            if(Items[i].getId() == 2)
-            {
-                return;
-            }
-        }
+        if(crafted) {return;}
 
         obj = GameObject.Find("GreenWand");
         obj2 = GameObject.Find("BlueWand");
@@ -154,6 +151,8 @@ public class InventoryManager : MonoBehaviour
                 }
             }
 
+            crafted = true;
+
         }
         else if(obj == null)
         {
@@ -180,6 +179,18 @@ public class InventoryManager : MonoBehaviour
 
     public void FindRing()
     {
+        dial = woman.GetComponent<DialogueNPC>();
+
+        for(int i = 0; i < Items.Count; i++)
+        {
+            if(Items[i].getId() == 5)
+            {
+               dial.enabled = true;
+               return;
+            }
+        }
+
+        /*
         for(int i = 0; i < Items.Count; i++)
         {
             if(Items[i].getId() == 5)
@@ -193,6 +204,7 @@ public class InventoryManager : MonoBehaviour
         textComponent.enabled = true;
         textComponent.text =  "*crying noises*";
         StartCoroutine(ShowMessage());
+        */
     }
 
 }

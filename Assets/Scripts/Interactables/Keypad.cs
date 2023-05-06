@@ -25,6 +25,8 @@ public class Keypad : Interactable
     // this function is where we will design our interaction using code
     protected override void Interact()
     {
+        Debug.Log("Interacted");
+        /*
         Debug.Log("Interacted with " + gameObject.name);
         colourIndex++;
         Debug.Log("Size of colors : "  + colors.Length);
@@ -35,5 +37,6 @@ public class Keypad : Interactable
         }
 
         mesh.material.color = colors[colourIndex];
+    */
     }
 }

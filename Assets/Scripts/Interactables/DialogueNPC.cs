@@ -37,6 +37,7 @@ public class DialogueNPC : Interactable
     {
         if(hasInteracted)
         {
+            
             if(textComponent.text == lines[index])
             {
                 if(Input.GetMouseButtonDown(0))
@@ -55,6 +56,7 @@ public class DialogueNPC : Interactable
             }
         }
     }
+
 
     void StartDialogue()
     {
@@ -81,6 +83,14 @@ public class DialogueNPC : Interactable
 
     protected override void Interact()
     {
+        if(!this.enabled)
+        {
+            hasInteracted = true;
+            textComponent.enabled = true;
+            textComponent.text = "Cant Interact yet";
+            StartCoroutine(ShowMessage());
+            return;
+        }
         Debug.Log("text : interacted");
         hasInteracted = true;
         textComponent.enabled = true; // anoigei text
@@ -94,5 +104,11 @@ public class DialogueNPC : Interactable
             return promptMessage;
     }
 
+    public IEnumerator ShowMessage()
+    {
+        yield return new WaitForSeconds(2);
+        textComponent.enabled = false;
+        hasInteracted = false;
+    }
 
 }
