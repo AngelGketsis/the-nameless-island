@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1600,7 +1600,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Continue
         m_Mode: 1
@@ -2266,6 +2266,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241812387}
   m_CullTransparentMesh: 1
+--- !u!1 &261797607 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 304620c2a96ce1043bc12531ed0125d2, type: 3}
+  m_PrefabInstance: {fileID: 859429170}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &261797611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261797607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 087c5e1e486645b4db00be233620d502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 859975636}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &261797612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261797607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 574fe496602bb804ca86a947e201c1ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useEvents: 1
+  promptMessage: Press F to Interact
+--- !u!64 &261797613
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261797607}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 304620c2a96ce1043bc12531ed0125d2, type: 3}
 --- !u!1 &277811367
 GameObject:
   m_ObjectHideFlags: 0
@@ -3252,7 +3324,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Continue
         m_Mode: 1
@@ -4680,7 +4752,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Continue
         m_Mode: 1
@@ -5940,6 +6012,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Timber house
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 304620c2a96ce1043bc12531ed0125d2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 304620c2a96ce1043bc12531ed0125d2, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -6241,6 +6317,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872867078}
   m_CullTransparentMesh: 1
+--- !u!1 &893809526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: de56bad3c5656b74d8cc92d71dee9f62, type: 3}
+  m_PrefabInstance: {fileID: 203262157}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &893809530
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893809526}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: de56bad3c5656b74d8cc92d71dee9f62, type: 3}
 --- !u!1001 &897009062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8153,9 +8248,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
-        m_MethodName: ListItems
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: Pause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9446,6 +9541,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 2cc6efd0975a2084caa41d70df3d3dc4, type: 3}
   m_PrefabInstance: {fileID: 1208557979}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1213093132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 14f682f9e2d04af4396f95b882219950, type: 3}
+  m_PrefabInstance: {fileID: 2041293179}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1213093136
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213093132}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 14f682f9e2d04af4396f95b882219950, type: 3}
 --- !u!1 &1223102099
 GameObject:
   m_ObjectHideFlags: 0
@@ -10026,7 +10140,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1900, y: 980}
+  m_SizeDelta: {x: 1900, y: 1100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1301444653
 MonoBehaviour:
@@ -10601,6 +10715,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358350116}
   m_CullTransparentMesh: 1
+--- !u!1 &1366171238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1366171239}
+  m_Layer: 0
+  m_Name: Characters
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1366171239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366171238}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.803722, y: 4.4341846, z: 7.5851803}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1381972422
 GameObject:
   m_ObjectHideFlags: 0
@@ -12959,8 +13104,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\"W\"\t\t\tMove Forward\n\"S\"\t\t\tMove Backward\n\"A\"\t\t\tMove Left\n\"D\"\t\t\tMove
-    Right\n\"Space\"\t\tJump\n\"Left Shift\"\t\tSprint\n\"F\"\t\t\tInteract\n\"Mouse
-    Click\"\tPick up / Dialogue Next\n\"Tab\"\t\t\tOpen Inventory\n\"I\"\t\t\tInfo\n\"Esc\"\t\t\tPause"
+    Right\n\"Space\"\t\t\tJump\n\"Left Shift\"\t\tSprint\n\"F\"\t\t\tInteract\n\"Mouse
+    Click\"\t\tPick up / Dialogue Next\n\"Tab\"\t\t\tOpen Inventory\n\"I\"\t\t\tInfo\n\"Esc\"\t\t\tPause"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 935a8e1150323cb41a9b3e796101f9ad, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13247,7 +13392,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Pause
         m_Mode: 1
