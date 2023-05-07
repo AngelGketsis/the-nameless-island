@@ -5,6 +5,7 @@ using TMPro;
 using System.Threading;
 using UnityEngine.UI;
 
+
 public class PlayerMotor : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
@@ -18,6 +19,7 @@ public class PlayerMotor : MonoBehaviour
     public float gravity = -9.8f;
     public float jumpHeight = 3f;
     public Button openInventory;
+
 
     public Button pause;
     public Button play;
@@ -116,14 +118,14 @@ public class PlayerMotor : MonoBehaviour
 
     public void SeenPlayer()
     {
-        /*
-        Vector3 checkPoint = new Vector3(-2, 5, -5); // gia ta kanonika checkpoints pinakas Vector 3 kai analoga ti fasi tou paixnidiou tha kanei teleport se auto to index
+        
+        Vector3 checkPoint = new Vector3(437, 11, 487); // gia ta kanonika checkpoints pinakas Vector 3 kai analoga ti fasi tou paixnidiou tha kanei teleport se auto to index
         controller.enabled = false;
         transform.position = checkPoint;
-        controller.enabled = true;*/
-        textComponent.enabled = true;
-        textComponent.text = "You were seen !";
-        StartCoroutine(ShowMessage());
+        controller.enabled = true;
+        //textComponent.enabled = true;
+        //textComponent.text = "You were seen !";
+        //StartCoroutine(ShowMessage());
 
     }
 
