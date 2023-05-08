@@ -23,8 +23,8 @@ public class InventoryManager : MonoBehaviour
 
     public InventoryItemsController[] InventoryItems;
 
-    private GameObject obj;
-    private GameObject obj2;
+    private GameObject key;
+    private GameObject map;
     private GameObject obj3;
     private GameObject ring;
     public GameObject woman;
@@ -121,59 +121,17 @@ public class InventoryManager : MonoBehaviour
 
         if(crafted) {return;}
 
-        obj = GameObject.Find("GreenWand");
-        obj2 = GameObject.Find("BlueWand");
-        obj3 = GameObject.Find("RedWand");
-        sobj = ScriptableObject.CreateInstance<Item>();
+        key = GameObject.Find("Key");
+        map = GameObject.Find("Map");
 
-        if(obj == null && obj2 == null)
-        {
+        Instantiate(key, new Vector3((float)452.6632, (float)10, (float)458.8), Quaternion.Euler(90f, 90f, 0f));
+        Instantiate(map, new Vector3((float)451.6632, (float)10, (float)458.8), Quaternion.Euler(0f, 90f, 0f));
 
-            transform.rotation = Quaternion.Euler(90, 0, 0);
-            Debug.Log("OBJJJJJJJJJJJJJJJ");
-            Instantiate(obj3, new Vector3((float)-1.5, (float)0.7, (float)2), transform.rotation);
-  
-            for(int i = 0; i < Items.Count; i++)
-            {
-                if(Items[i].getId() == 1)
-                {
-                    Items.Remove(Items[i]);
-                    break;
-                }
-            }
+        key = GameObject.Find("Key");
+        map = GameObject.Find("Map");
 
-            for(int i = 0; i < Items.Count ; i++)
-            {
-                if(Items[i].getId() == 3)
-                {
-                    Items.Remove(Items[i]);
-                    break;
-                }
-            }
-
-            crafted = true;
-
-        }
-        else if(obj == null)
-        {
-            textComponent.enabled = true;
-            textComponent.text = "Missing Blue Wand !";
-            StartCoroutine(ShowMessage());
-        }
-        else if(obj2 == null)
-        {
-            textComponent.enabled = true;
-            textComponent.text = "Missing Green Wand !";
-            StartCoroutine(ShowMessage());
-        }
-
-        else
-        {
-            textComponent.enabled = true;
-            textComponent.text = "Missing Blue Wand and Green Wand !"; 
-            StartCoroutine(ShowMessage());
-        }
-    
+        Destroy(key);
+        Destroy(map);
 
     }
 
