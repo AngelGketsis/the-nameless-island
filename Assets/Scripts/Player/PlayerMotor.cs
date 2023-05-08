@@ -47,7 +47,6 @@ public class PlayerMotor : MonoBehaviour
     {
         if(lerpCrouch)
         {
-            Debug.Log("Crouching");
             crouchTimer += Time.deltaTime;
             float p = crouchTimer / 1;
             p *= p;
