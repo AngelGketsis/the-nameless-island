@@ -29,6 +29,8 @@ public class PlayerMotor : MonoBehaviour
 
     private bool isPaused = false;
 
+    private bool insideLog = false;
+
     //private GameObject PausePanel;
 
     //public GameObject PausePanel;
@@ -207,6 +209,26 @@ public class PlayerMotor : MonoBehaviour
         Time.timeScale = 1;
         isPaused = false;
         
+    }
+
+    public void InteractLog()
+    {
+        if(!insideLog)
+        {
+            insideLog = true;
+            Vector3 checkPoint = new Vector3((float)436.4, 11, 489); // gia ta kanonika checkpoints pinakas Vector 3 kai analoga ti fasi tou paixnidiou tha kanei teleport se auto to index
+            controller.enabled = false;
+            transform.position = checkPoint;
+            controller.enabled = true;
+        }
+        else
+        {
+            insideLog = false;
+            Vector3 checkPoint = new Vector3(435, 11, 489); // gia ta kanonika checkpoints pinakas Vector 3 kai analoga ti fasi tou paixnidiou tha kanei teleport se auto to index
+            controller.enabled = false;
+            transform.position = checkPoint;
+            controller.enabled = true;
+        }
     }
 
 }
