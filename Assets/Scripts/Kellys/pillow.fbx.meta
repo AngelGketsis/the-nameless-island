@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 6506013c0215046449b81940cba9cc11
+guid: 92189c4dbb07e4145b858a290c2df299
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: pillow_cropped
-    second: {fileID: 2800000, guid: 2c0fe8e45fde8bc478a5e8286f1c42c1, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
