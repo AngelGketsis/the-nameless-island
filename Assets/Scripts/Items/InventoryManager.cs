@@ -29,7 +29,7 @@ public class InventoryManager : MonoBehaviour
     private GameObject ring;
     public GameObject woman;
     public Item wand;
-    private bool crafted = false;
+    private bool gaveKeyAndMap = false;
 
     private ScriptableObject sobj;
     private DialogueNPC dial;
@@ -115,11 +115,12 @@ public class InventoryManager : MonoBehaviour
         textComponent.enabled = false;
     }
 
-    public void FindInventoryItem()
+    public void GiveMapAndKey()
     {
-        Debug.Log("Inside FindInventoryItem");
 
-        if(crafted) {return;}
+        if(gaveKeyAndMap) {return;}
+
+        gaveKeyAndMap = true;
 
         key = GameObject.Find("Key");
         map = GameObject.Find("Map");
