@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: 0201d61c96134ac48a21ac30f356e9dd
+guid: 17b0e7ac827e8414c89803363ffacd36
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: eyebrow012
-    second: {fileID: -676346617345840501, guid: a067126144e2bbc42be66166769cf1b5, type: 3}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: high-poly
-    second: {fileID: -6478536213147159724, guid: 92189c4dbb07e4145b858a290c2df299, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
