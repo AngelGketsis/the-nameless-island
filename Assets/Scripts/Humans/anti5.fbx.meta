@@ -3,12 +3,7 @@ guid: a067126144e2bbc42be66166769cf1b5
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: high-poly
-    second: {fileID: 2100000, guid: 121b58f12db8b0e43adf87d1c1ef6b71, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
