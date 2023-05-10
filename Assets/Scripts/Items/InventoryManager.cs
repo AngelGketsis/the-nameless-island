@@ -125,8 +125,8 @@ public class InventoryManager : MonoBehaviour
         key = GameObject.Find("Key");
         map = GameObject.Find("Map");
 
-        Instantiate(key, new Vector3((float)452.6632, (float)10, (float)458.8), Quaternion.Euler(90f, 90f, 0f));
-        Instantiate(map, new Vector3((float)451.6632, (float)10, (float)458.8), Quaternion.Euler(0f, 90f, 0f));
+        Instantiate(key, new Vector3((float)459.232, (float)10, (float)424), Quaternion.Euler(90f, 90f, 0f));
+        Instantiate(map, new Vector3((float)459.6132, (float)10, (float)423), Quaternion.Euler(0f, 90f, 0f));
 
         key = GameObject.Find("Key");
         map = GameObject.Find("Map");
