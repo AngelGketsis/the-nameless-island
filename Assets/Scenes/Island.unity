@@ -8094,7 +8094,9 @@ GameObject:
   - component: {fileID: 754746057}
   - component: {fileID: 754746056}
   - component: {fileID: 754746055}
-  m_Layer: 0
+  - component: {fileID: 754746059}
+  - component: {fileID: 754746058}
+  m_Layer: 6
   m_Name: Door (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8180,6 +8182,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 754746053}
   m_Mesh: {fileID: 2619086233303812490, guid: a71a624d47c0b954083ed51497329582, type: 3}
+--- !u!114 &754746058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754746053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 087c5e1e486645b4db00be233620d502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: InteractHaram
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &754746059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754746053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 574fe496602bb804ca86a947e201c1ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useEvents: 1
+  promptMessage: Press F to Interact
 --- !u!1001 &756278812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10668,6 +10711,7 @@ MonoBehaviour:
   gravity: -9.8
   jumpHeight: 0.85
   openInventory: {fileID: 1085428734}
+  inventoryManager: {fileID: 638994298}
   pause: {fileID: 1849158537}
   play: {fileID: 164463142}
 --- !u!4 &971480380 stripped

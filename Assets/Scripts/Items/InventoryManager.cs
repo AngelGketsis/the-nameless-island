@@ -166,4 +166,9 @@ public class InventoryManager : MonoBehaviour
         */
     }
 
+    public bool HasKeY()
+    {
+        return gaveKeyAndMap;
+    }
+
 }

@@ -18,27 +18,26 @@ public class PlayerMotor : MonoBehaviour
     private bool crouching;
     private float crouchTimer;
     private bool lerpCrouch = true;
+
     public float speed = 5f;
     public float gravity = -9.8f;
     public float jumpHeight = 3f;
     public Button openInventory;
+    public InventoryManager inventoryManager;
 
 
     public Button pause;
     public Button play;
 
     private bool isPaused = false;
+    private bool insideHaram = false;
 
-    private bool insideLog = false;
-
-    //private GameObject PausePanel;
-
-    //public GameObject PausePanel;
 
     // Start is called before the first frame update
     void Start()
     {
         controller  = GetComponent<CharacterController>();
+
         Pause();
     }
 
@@ -210,24 +209,33 @@ public class PlayerMotor : MonoBehaviour
         
     }
 
-    public void InteractLog()
+    public void InteractHaram()
     {
-        if(!insideLog)
+        if(!inventoryManager.HasKeY())
         {
-            insideLog = true;
-            Vector3 checkPoint = new Vector3((float)436.4, 11, 489); // gia ta kanonika checkpoints pinakas Vector 3 kai analoga ti fasi tou paixnidiou tha kanei teleport se auto to index
+            textComponent.enabled = true;
+            textComponent.text = "Find the Key by the Docks";
+            StartCoroutine(ShowMessage());
+            return;
+        }
+
+        if(!insideHaram)
+        {
+            insideHaram = true;
+            Vector3 checkPoint = new Vector3((float)441,(float)14,(float)553.5); // gia ta kanonika checkpoints pinakas Vector 3 kai analoga ti fasi tou paixnidiou tha kanei teleport se auto to index
             controller.enabled = false;
             transform.position = checkPoint;
             controller.enabled = true;
         }
         else
         {
-            insideLog = false;
-            Vector3 checkPoint = new Vector3(435, 11, 489); // gia ta kanonika checkpoints pinakas Vector 3 kai analoga ti fasi tou paixnidiou tha kanei teleport se auto to index
+            insideHaram = false;
+            Vector3 checkPoint = new Vector3((float)441,(float)11,(float)553.5); // gia ta kanonika checkpoints pinakas Vector 3 kai analoga ti fasi tou paixnidiou tha kanei teleport se auto to index
             controller.enabled = false;
             transform.position = checkPoint;
             controller.enabled = true;
         }
     }
+
 
 }
