@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d7b5a167b5c6ef4f8adc3d334c60c3e, type: 3}
-  m_Name: Coins
+  m_Name: GoldBar
   m_EditorClassIdentifier: 
-  id: 8
-  itemName: Coins
-  value: 8
-  icon: {fileID: 21300000, guid: 93b5b28db06f8d2439c780ec3aeb28d2, type: 3}
+  id: 9
+  itemName: GoldBar
+  value: 9
+  icon: {fileID: 21300000, guid: a0c46bd0ce09e0d479ad2962809f906f, type: 3}

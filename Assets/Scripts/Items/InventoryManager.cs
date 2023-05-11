@@ -25,8 +25,9 @@ public class InventoryManager : MonoBehaviour
 
     private GameObject key;
     private GameObject map;
-    private GameObject obj3;
     private GameObject ring;
+    private GameObject goldBar;
+
     public GameObject woman;
     public Item wand;
     private bool gaveKeyAndMap = false;
@@ -149,21 +150,29 @@ public class InventoryManager : MonoBehaviour
             }
         }
 
-        /*
+    }
+
+    public void FindCoins()
+    {
+
         for(int i = 0; i < Items.Count; i++)
         {
-            if(Items[i].getId() == 5)
+            if(Items[i].getId() == 8)
             {
-                textComponent.enabled = true;
-                textComponent.text =  "This was yout wife's ring, they took her away...";
-                StartCoroutine(ShowMessage());
-                return;
+                Items.Remove(Items[i]);
+                StartCoroutine(MeltCoins());
             }
         }
-        textComponent.enabled = true;
-        textComponent.text =  "*crying noises*";
-        StartCoroutine(ShowMessage());
-        */
+
+    }
+
+    public IEnumerator MeltCoins()
+    {
+        yield return new WaitForSeconds(5);
+        Debug.Log("Coins melted");
+        goldBar = GameObject.Find("GoldBar");
+        Instantiate(goldBar, new Vector3((float)490.532, (float)10.7, (float)442.9), Quaternion.Euler(-180f, 0.5f, 5f));
+        Destroy(goldBar);
     }
 
     public bool HasKeY()
