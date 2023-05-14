@@ -30,7 +30,8 @@ public class InventoryManager : MonoBehaviour
 
     public GameObject woman;
     public Item wand;
-    private bool gaveKeyAndMap = false;
+    private bool gaveKey = false;
+    private bool gaveMap = false;
 
     private ScriptableObject sobj;
     private DialogueNPC dial;
@@ -116,25 +117,36 @@ public class InventoryManager : MonoBehaviour
         textComponent.enabled = false;
     }
 
-    public void GiveMapAndKey()
+    public void GiveMap()
     {
 
-        if(gaveKeyAndMap) {return;}
+        if(gaveMap) {return;}
 
-        gaveKeyAndMap = true;
+        gaveMap = true;
 
-        key = GameObject.Find("Key");
         map = GameObject.Find("Map");
 
-        Instantiate(key, new Vector3((float)459.232, (float)10, (float)424), Quaternion.Euler(90f, 90f, 0f));
         Instantiate(map, new Vector3((float)459.6132, (float)10, (float)423), Quaternion.Euler(0f, 90f, 0f));
 
-        key = GameObject.Find("Key");
         map = GameObject.Find("Map");
 
-        Destroy(key);
         Destroy(map);
 
+    }
+
+    public void GiveKey()
+    {
+        if(gaveKey) {return;}
+
+        gaveKey = true;
+
+        key = GameObject.Find("Key");
+
+        Instantiate(key, new Vector3((float)478.1132, (float)10, (float)536.7443), Quaternion.Euler(90f, 90f, 0f));
+
+        key = GameObject.Find("Key");
+
+        Destroy(key);
     }
 
     public void FindRing()
@@ -177,7 +189,7 @@ public class InventoryManager : MonoBehaviour
 
     public bool HasKeY()
     {
-        return gaveKeyAndMap;
+        return gaveKey;
     }
 
 }
