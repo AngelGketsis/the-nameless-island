@@ -28,6 +28,8 @@ public class PlayerMotor : MonoBehaviour
 
     public Button pause;
     public Button play;
+    public Button map;
+    public Image mapImg;
 
     private bool isPaused = false;
     private bool insideHaram = false;
@@ -37,7 +39,6 @@ public class PlayerMotor : MonoBehaviour
     void Start()
     {
         controller  = GetComponent<CharacterController>();
-
         Pause();
     }
 
@@ -86,6 +87,7 @@ public class PlayerMotor : MonoBehaviour
         
         isGrounded = controller.isGrounded;
         Respawn();
+        showMap();
     }
 
     //receive the inputs for InputManager.cs and apply them to character controller
@@ -209,6 +211,11 @@ public class PlayerMotor : MonoBehaviour
         
     }
 
+    //public void openMap()
+    //{
+       // openMap.onClick.Invoke();
+    //}
+
     public void InteractHaram()
     {
         if(!inventoryManager.HasKeY())
@@ -245,6 +252,14 @@ public class PlayerMotor : MonoBehaviour
             textComponent.text = "You don't have something to melt yet";
             StartCoroutine(ShowMessage());
             return;
+        }
+    }
+
+    public void showMap()
+    {
+        if(inventoryManager.HasMap())
+        {
+            mapImg.gameObject.SetActive(true);
         }
     }
 

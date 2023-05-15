@@ -195,12 +195,21 @@ public class InventoryManager : MonoBehaviour
 
     public void teleportResistance()
     {
-        arxant = GameObject.Find("arxant");
-        Instantiate(arxant, new Vector3((float)459.6132, (float)12, (float)423), Quaternion.Euler(0f, 90f, 0f));
-        Debug.Log("Instantiated arxant");
-        arxant = GameObject.Find("arxant");
+        GameObject arxantPrefab = GameObject.Find("arxant"); // Find the prefab for "arxant"
 
-        Destroy(arxant);
+        if (arxantPrefab != null)
+        {
+            GameObject newArxant = Instantiate(arxantPrefab, new Vector3(459.6132f, 12f, 423f), Quaternion.Euler(0f, 90f, 0f));
+            Debug.Log("Instantiated arxant");
+
+            // Optionally, you can destroy the original "arxant" object after instantiating the new one
+            Destroy(arxantPrefab);
+        }
+        else
+        {
+            Debug.LogError("Failed to find arxant prefab");
+        }
+
     }
 
     public bool HasKeY()
@@ -221,6 +230,19 @@ public class InventoryManager : MonoBehaviour
         for(int i = 0; i < Items.Count; i++)
         {
             if(Items[i].getId() == 8)
+            {
+               return true;
+            }
+        }
+
+        return false;
+    }
+
+    public bool HasMap()
+    {
+        for(int i = 0; i < Items.Count; i++)
+        {
+            if(Items[i].getId() == 7)
             {
                return true;
             }
