@@ -27,6 +27,7 @@ public class InventoryManager : MonoBehaviour
     private GameObject map;
     private GameObject ring;
     private GameObject goldBar;
+    private GameObject arxant;
 
     public GameObject woman;
     public Item wand;
@@ -132,6 +133,8 @@ public class InventoryManager : MonoBehaviour
 
         Destroy(map);
 
+        teleportResistance();
+
     }
 
     public void GiveKey()
@@ -185,6 +188,19 @@ public class InventoryManager : MonoBehaviour
         goldBar = GameObject.Find("GoldBar");
         Instantiate(goldBar, new Vector3((float)490.532, (float)10.7, (float)442.9), Quaternion.Euler(-180f, 0.5f, 5f));
         Destroy(goldBar);
+
+        teleportResistance();
+
+    }
+
+    public void teleportResistance()
+    {
+        arxant = GameObject.Find("arxant");
+        Instantiate(arxant, new Vector3((float)459.6132, (float)12, (float)423), Quaternion.Euler(0f, 90f, 0f));
+        Debug.Log("Instantiated arxant");
+        arxant = GameObject.Find("arxant");
+
+        Destroy(arxant);
     }
 
     public bool HasKeY()
