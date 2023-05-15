@@ -221,7 +221,7 @@ public class PlayerMotor : MonoBehaviour
         if(!inventoryManager.HasKeY())
         {
             textComponent.enabled = true;
-            textComponent.text = "Find the Key by the Docks";
+            textComponent.text = "Find the Key in the Square";
             StartCoroutine(ShowMessage());
             return;
         }
@@ -237,7 +237,7 @@ public class PlayerMotor : MonoBehaviour
         else
         {
             insideHaram = false;
-            Vector3 checkPoint = new Vector3((float)441,(float)11,(float)553.5); // gia ta kanonika checkpoints pinakas Vector 3 kai analoga ti fasi tou paixnidiou tha kanei teleport se auto to index
+            Vector3 checkPoint = new Vector3((float)441,(float)10,(float)553.5); // gia ta kanonika checkpoints pinakas Vector 3 kai analoga ti fasi tou paixnidiou tha kanei teleport se auto to index
             controller.enabled = false;
             transform.position = checkPoint;
             controller.enabled = true;

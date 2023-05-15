@@ -27,7 +27,13 @@ public class InventoryManager : MonoBehaviour
     private GameObject map;
     private GameObject ring;
     private GameObject goldBar;
+    
     private GameObject arxant;
+    private GameObject ant1;
+    private GameObject ant2;
+    private GameObject ant3;
+    private GameObject ant4;
+    private GameObject ant5;
 
     public GameObject woman;
     public Item wand;
@@ -195,20 +201,27 @@ public class InventoryManager : MonoBehaviour
 
     public void teleportResistance()
     {
-        GameObject arxantPrefab = GameObject.Find("arxant"); // Find the prefab for "arxant"
+        GameObject arxantPrefab = GameObject.Find("arxant"); 
+        GameObject ant1Prefab = GameObject.Find("ant1"); 
+        GameObject ant2Prefab = GameObject.Find("ant2"); 
+        GameObject ant3Prefab = GameObject.Find("ant3"); 
+        GameObject ant4Prefab = GameObject.Find("ant4"); 
+        GameObject ant5Prefab = GameObject.Find("ant5"); 
 
-        if (arxantPrefab != null)
-        {
-            GameObject newArxant = Instantiate(arxantPrefab, new Vector3(459.6132f, 12f, 423f), Quaternion.Euler(0f, 90f, 0f));
-            Debug.Log("Instantiated arxant");
 
-            // Optionally, you can destroy the original "arxant" object after instantiating the new one
-            Destroy(arxantPrefab);
-        }
-        else
-        {
-            Debug.LogError("Failed to find arxant prefab");
-        }
+        GameObject newArxant = Instantiate(arxantPrefab, new Vector3(425.0091f, 10f, 458.523f), Quaternion.Euler(0f, 90f, 0f));
+        GameObject newAnt1 = Instantiate(ant1Prefab, new Vector3(430.8664f, 10f, 445.937f), Quaternion.Euler(0f, 90f, 0f));
+        GameObject newAnt2 = Instantiate(ant2Prefab, new Vector3(429.6132f, 10f, 454.6f), Quaternion.Euler(0f, 90f, 0f));
+        GameObject newAnt3 = Instantiate(ant3Prefab, new Vector3(429.6132f, 10f, 462.21f), Quaternion.Euler(0f, 90f, 0f));
+        GameObject newAnt4 = Instantiate(ant4Prefab, new Vector3(426.6132f, 10f, 455.37f), Quaternion.Euler(0f, 90f, 0f));
+        GameObject newAnt5 = Instantiate(ant5Prefab, new Vector3(425.5132f, 10f, 432.33f), Quaternion.Euler(0f, 90f, 0f));
+
+        Destroy(arxantPrefab);
+        Destroy(ant1Prefab);
+        Destroy(ant2Prefab);
+        Destroy(ant3Prefab);
+        Destroy(ant4Prefab);
+        Destroy(ant5Prefab);
 
     }
 
