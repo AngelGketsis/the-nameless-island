@@ -142,7 +142,7 @@ public class InventoryManager : MonoBehaviour
 
         key = GameObject.Find("Key");
 
-        Instantiate(key, new Vector3((float)478.1132, (float)10, (float)536.7443), Quaternion.Euler(90f, 90f, 0f));
+        Instantiate(key, new Vector3((float)476.8546, (float)10, (float)535.32), Quaternion.Euler(90f, 90f, 0f));
 
         key = GameObject.Find("Key");
 
@@ -189,7 +189,28 @@ public class InventoryManager : MonoBehaviour
 
     public bool HasKeY()
     {
-        return gaveKey;
+        for(int i = 0; i < Items.Count; i++)
+        {
+            if(Items[i].getId() == 6)
+            {
+               return true;
+            }
+        }
+
+        return false;
+    }
+
+    public bool HasCoins()
+    {
+        for(int i = 0; i < Items.Count; i++)
+        {
+            if(Items[i].getId() == 8)
+            {
+               return true;
+            }
+        }
+
+        return false;
     }
 
 }

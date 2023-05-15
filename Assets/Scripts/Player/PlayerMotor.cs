@@ -237,5 +237,16 @@ public class PlayerMotor : MonoBehaviour
         }
     }
 
+    public void InteractSilversmith()
+    {
+        if(!inventoryManager.HasCoins())
+        {
+            textComponent.enabled = true;
+            textComponent.text = "You don't have something to melt yet";
+            StartCoroutine(ShowMessage());
+            return;
+        }
+    }
+
 
 }
