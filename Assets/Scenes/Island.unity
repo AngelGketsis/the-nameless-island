@@ -7997,6 +7997,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277811367}
   m_CullTransparentMesh: 1
+--- !u!1 &279511666 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2868842090239441555, guid: 9b78c28f440e80347af3c55f526d2572, type: 3}
+  m_PrefabInstance: {fileID: 944200962}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &279511671
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279511666}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.09014409, y: 0.03136295, z: 0.11449618}
+  m_Center: {x: -0.0000004768759, y: 0.016902102, z: -0.0014151479}
 --- !u!1 &280767000
 GameObject:
   m_ObjectHideFlags: 0
@@ -8925,6 +8943,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 2cc6efd0975a2084caa41d70df3d3dc4, type: 3}
   m_PrefabInstance: {fileID: 319468193}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &321481613 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8295701739642420857, guid: 9b78c28f440e80347af3c55f526d2572, type: 3}
+  m_PrefabInstance: {fileID: 944200962}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &327710006
 PrefabInstance:
@@ -25387,6 +25410,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moni
       objectReference: {fileID: 0}
+    - target: {fileID: 8295701739642420857, guid: 9b78c28f440e80347af3c55f526d2572, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b78c28f440e80347af3c55f526d2572, type: 3}
 --- !u!4 &944200963 stripped
@@ -25394,6 +25421,72 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8295701739642420856, guid: 9b78c28f440e80347af3c55f526d2572, type: 3}
   m_PrefabInstance: {fileID: 944200962}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &944200964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321481613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 087c5e1e486645b4db00be233620d502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1306319181}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &944200965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321481613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 574fe496602bb804ca86a947e201c1ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useEvents: 1
+  promptMessage: Press F for Info
+--- !u!65 &944200966
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321481613}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.399607, y: 4.803665, z: 12.487907}
+  m_Center: {x: 0.27240995, y: 1.9018326, z: 0.984042}
 --- !u!1001 &946488649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46868,7 +46961,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708309792}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30c5d87c514b1914e8a5dd02f7d76236, type: 3}
   m_Name: 
@@ -55074,8 +55167,8 @@ MonoBehaviour:
   lines:
   - "-(\u03B1\u03C1\u03C7\u03B7\u03B3\u03CC\u03C2)-\u03A0\u03AC\u03C1\u03B5 \u03B1\u03C5\u03C4\u03CC
     \u03C4\u03BF \u03BC\u03B1\u03C7\u03B1\u03AF\u03C1\u03B9/\u03B3\u03B9\u03B1\u03C4\u03B1\u03B3\u03AC\u03BD\u03B9
-    \u03B8\u03B1 \u03C3\u03BF\u03C5 \u03C7\u03C1\u03B5\u03B9\u03B1\u03C3\u03C4\u03B5\u03AF"
-  - "\u03A4\u03BF \u03BA\u03AC\u03C3\u03C4\u03C1\u03BF \u03B1\u03C0\u03BF\u03C4\u03B5\u03BB\u03B5\u03AF\u03C4\u03B1\u03B9
+    \u03B8\u03B1 \u03C3\u03BF\u03C5 \u03C7\u03C1\u03B5\u03B9\u03B1\u03C3\u03C4\u03B5\u03AF\u03A4\u03BF
+    \u03BA\u03AC\u03C3\u03C4\u03C1\u03BF \u03B1\u03C0\u03BF\u03C4\u03B5\u03BB\u03B5\u03AF\u03C4\u03B1\u03B9
     \u03B1\u03C0\u03CC \u03C4\u03BF \u0399\u03C4\u03C2 \u039A\u03B1\u03BB\u03AD \u03BA\u03B1\u03B9
     \u03C4\u03BF \u0391\u03C3\u03BB\u03AC\u03BD \u03A4\u03B6\u03B1\u03BC\u03AF. \u03A4\u03BF
     \u0399\u03C4\u03C2 \u039A\u03B1\u03BB\u03AD \u03B5\u03AF\u03BD\u03B1\u03B9 \u03BA\u03BF\u03C3\u03BC\u03B9\u03BA\u03CC
@@ -55086,15 +55179,12 @@ MonoBehaviour:
     \u03CC\u03C4\u03B9 \u03B5\u03AF\u03BD\u03B1\u03B9 \u03BA\u03B1\u03B9 \u03C4\u03B1
     \u03BC\u03C0\u03BF\u03C5\u03BD\u03C4\u03C1\u03BF\u03CD\u03BC\u03B9\u03B1 \u03CC\u03C0\u03BF\u03C5
     \u03BA\u03C1\u03B1\u03C4\u03AC\u03BD\u03B5 \u03C4\u03B7 \u03B3\u03C5\u03BD\u03B1\u03AF\u03BA\u03B1
-    \u03C3\u03BF\u03C5. "
-  - "\u03A4\u03BF \u03C3\u03C7\u03AD\u03B4\u03B9\u03BF \u03B5\u03AF\u03BD\u03B1\u03B9
+    \u03C3\u03BF\u03C5. \u03A4\u03BF \u03C3\u03C7\u03AD\u03B4\u03B9\u03BF \u03B5\u03AF\u03BD\u03B1\u03B9
     \u03C0\u03B5\u03C1\u03AF\u03C0\u03BB\u03BF\u03BA\u03BF \u03B1\u03BB\u03BB\u03AC
     \u03CC\u03C7\u03B9 \u03B1\u03C0\u03AF\u03B8\u03B1\u03BD\u03BF. \u03A4\u03CE\u03C1\u03B1
     \u03B5\u03AF\u03BD\u03B1\u03B9 \u03B7 \u03C3\u03C4\u03B9\u03B3\u03BC\u03AE \u03BD\u03B1
     \u03B4\u03B5\u03AF\u03BE\u03B5\u03B9\u03C2 \u03C0\u03CC\u03C3\u03BF \u03B3\u03B5\u03BD\u03BD\u03B1\u03AF\u03BF\u03C2
-    \u03BA\u03B1\u03B9 \u03B9\u03BA\u03B1\u03BD\u03CC\u03C2 \u03B5\u03AF\u03C3\u03B1\u03B9.
-    \u0386\u03BA\u03BF\u03C5 \u03C0\u03C9\u03C2 \u03B8\u03B1 \u03B3\u03AF\u03BD\u03B5\u03B9
-    \u2026 "
+    \u03BA\u03B1\u03B9 \u03B9\u03BA\u03B1\u03BD\u03CC\u03C2 \u03B5\u03AF\u03C3\u03B1\u03B9."
   textSpeed: 0
 --- !u!1001 &2028675495
 PrefabInstance:
