@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Bag
   m_EditorClassIdentifier: 
   id: 10
-  itemName: Bag
+  itemName: Bag with jewels
   value: 10
   icon: {fileID: 21300000, guid: fe025e83f69d0b54f8a4fe3c7c128fd7, type: 3}

@@ -87,7 +87,7 @@ public class DialogueNPC : Interactable
         {
             hasInteracted = true;
             textComponent.enabled = true;
-            textComponent.text = "Cant Interact yet";
+            textComponent.text = "Can't Interact Currently";
             StartCoroutine(ShowMessage());
             return;
         }

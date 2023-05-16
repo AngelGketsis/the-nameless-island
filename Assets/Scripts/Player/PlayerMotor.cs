@@ -30,6 +30,8 @@ public class PlayerMotor : MonoBehaviour
     public Button play;
     public Button map;
     public Image mapImg;
+    public Image mapImgUpdated;
+    private bool locationRevealed = false;
 
     private bool isPaused = false;
     private bool insideHaram = false;
@@ -88,6 +90,7 @@ public class PlayerMotor : MonoBehaviour
         isGrounded = controller.isGrounded;
         Respawn();
         showMap();
+        endGame();
     }
 
     //receive the inputs for InputManager.cs and apply them to character controller
@@ -136,9 +139,9 @@ public class PlayerMotor : MonoBehaviour
 
     public void Respawn()
     {
-        if(transform.position.y < -30 && !isGrounded) // otan ginetai teleport prepei na ginei turn off/on o controller
+        if(transform.position.y < 3 && !isGrounded) // otan ginetai teleport prepei na ginei turn off/on o controller
         {
-            Vector3 checkPoint = new Vector3(-2, 5, -5); // gia ta kanonika checkpoints pinakas Vector 3 kai analoga ti fasi tou paixnidiou tha kanei teleport se auto to index
+            Vector3 checkPoint = new Vector3(450.9934f, 10f, 418.7365f); // gia ta kanonika checkpoints pinakas Vector 3 kai analoga ti fasi tou paixnidiou tha kanei teleport se auto to index
             controller.enabled = false;
             transform.position = checkPoint;
             controller.enabled = true;
@@ -237,7 +240,7 @@ public class PlayerMotor : MonoBehaviour
         else
         {
             insideHaram = false;
-            Vector3 checkPoint = new Vector3((float)441,(float)10,(float)553.5); // gia ta kanonika checkpoints pinakas Vector 3 kai analoga ti fasi tou paixnidiou tha kanei teleport se auto to index
+            Vector3 checkPoint = new Vector3((float)441.8708,(float)10.2,(float)552.8); // gia ta kanonika checkpoints pinakas Vector 3 kai analoga ti fasi tou paixnidiou tha kanei teleport se auto to index
             controller.enabled = false;
             transform.position = checkPoint;
             controller.enabled = true;
@@ -249,7 +252,7 @@ public class PlayerMotor : MonoBehaviour
         if(!inventoryManager.HasCoins())
         {
             textComponent.enabled = true;
-            textComponent.text = "You don't have something to melt yet";
+            textComponent.text = "You don't have something to melt currently";
             StartCoroutine(ShowMessage());
             return;
         }
@@ -260,6 +263,28 @@ public class PlayerMotor : MonoBehaviour
         if(inventoryManager.HasMap())
         {
             mapImg.gameObject.SetActive(true);
+        }
+
+        if(inventoryManager.HasMap() && locationRevealed)
+        {
+            mapImg.gameObject.SetActive(false);
+            mapImgUpdated.gameObject.SetActive(true);
+        }
+    }
+
+    public void revealLocation()
+    {
+        locationRevealed = true;
+    }
+
+
+    public void endGame()
+    {
+        if(inventoryManager.HasWeapon())
+        {
+            Debug.Log("Game over");
+            Pause();
+            inventoryManager.endPanel.SetActive(true);
         }
     }
 

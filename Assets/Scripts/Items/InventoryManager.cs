@@ -27,6 +27,7 @@ public class InventoryManager : MonoBehaviour
     private GameObject map;
     private GameObject ring;
     private GameObject goldBar;
+    private GameObject weapon;
     
     private GameObject arxant;
     private GameObject ant1;
@@ -36,9 +37,13 @@ public class InventoryManager : MonoBehaviour
     private GameObject ant5;
 
     public GameObject woman;
-    public Item wand;
+    public GameObject ant;
+    public GameObject arxfrouros;
+    public GameObject endPanel;
+
     private bool gaveKey = false;
     private bool gaveMap = false;
+    private bool gaveWeapon = false;
 
     private ScriptableObject sobj;
     private DialogueNPC dial;
@@ -139,8 +144,6 @@ public class InventoryManager : MonoBehaviour
 
         Destroy(map);
 
-        teleportResistance();
-
     }
 
     public void GiveKey()
@@ -158,18 +161,56 @@ public class InventoryManager : MonoBehaviour
         Destroy(key);
     }
 
+    public void GiveWeapon()
+    {
+        if(gaveWeapon) {return;}
+
+        gaveWeapon = true;
+
+        weapon = GameObject.Find("Weapon");
+
+        Instantiate(weapon, new Vector3((float)432.166, (float)10, (float)445.9534), Quaternion.Euler(90f, 90f, 0f));
+
+        weapon = GameObject.Find("Weapon");
+
+        Destroy(weapon);
+    }
+
     public void FindRing()
     {
         dial = woman.GetComponent<DialogueNPC>();
 
         for(int i = 0; i < Items.Count; i++)
         {
-            if(Items[i].getId() == 5)
+            if(Items[i].getId() == 11)
             {
                dial.enabled = true;
                return;
             }
         }
+
+        StartCoroutine(ShowMessage());
+
+    }
+
+    public void FindGoldBar()
+    {
+        GameObject ant1Prefab = GameObject.Find("anti1(Clone)"); 
+
+        if(ant1Prefab == null){ant1Prefab = GameObject.Find("anti1");}
+
+        dial = ant1Prefab.GetComponent<DialogueNPC>();
+
+        for(int i = 0; i < Items.Count; i++)
+        {
+            if(Items[i].getId() == 9)
+            {
+               dial.enabled = true;
+               return;
+            }
+        }
+
+        StartCoroutine(ShowMessage());
 
     }
 
@@ -184,6 +225,25 @@ public class InventoryManager : MonoBehaviour
                 StartCoroutine(MeltCoins());
             }
         }
+
+    }
+
+     public void FindJewels()
+    {
+        dial = arxfrouros.GetComponent<DialogueNPC>();
+
+        for(int i = 0; i < Items.Count; i++)
+        {
+            if(Items[i].getId() == 10)
+            {
+                arxfrouros.layer = 0;
+                Items.Remove(Items[i]);
+                dial.enabled = false;
+                return;
+            }
+        }
+
+        dial.enabled = true;
 
     }
 
@@ -256,6 +316,19 @@ public class InventoryManager : MonoBehaviour
         for(int i = 0; i < Items.Count; i++)
         {
             if(Items[i].getId() == 7)
+            {
+               return true;
+            }
+        }
+
+        return false;
+    }
+
+    public bool HasWeapon()
+    {
+        for(int i = 0; i < Items.Count; i++)
+        {
+            if(Items[i].getId() == 12)
             {
                return true;
             }
