@@ -260,12 +260,12 @@ public class PlayerMotor : MonoBehaviour
 
     public void showMap()
     {
-        if(inventoryManager.HasMap())
+        if(inventoryManager.HasMap() && !isPaused)
         {
             mapImg.gameObject.SetActive(true);
         }
 
-        if(inventoryManager.HasMap() && locationRevealed)
+        if(inventoryManager.HasMap() && locationRevealed && !isPaused)
         {
             mapImg.gameObject.SetActive(false);
             mapImgUpdated.gameObject.SetActive(true);
