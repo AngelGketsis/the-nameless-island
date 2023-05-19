@@ -194,6 +194,14 @@ public class PlayerMotor : MonoBehaviour
         {
             Debug.Log("PauseGame");
             pause.onClick.Invoke();
+            return;
+        }
+        // remove next lines if not fixed
+        if(Input.GetKeyDown(KeyCode.Escape) && isPaused)
+        {
+            Debug.Log("ResumeGame");
+            play.onClick.Invoke();
+            return;
         }
         
     }
