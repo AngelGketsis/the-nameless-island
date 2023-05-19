@@ -23,6 +23,7 @@ public class PlayerMotor : MonoBehaviour
     public float gravity = -9.8f;
     public float jumpHeight = 3f;
     public Button openInventory;
+    public Button closeInventory;
     public InventoryManager inventoryManager;
 
 
@@ -35,6 +36,9 @@ public class PlayerMotor : MonoBehaviour
 
     private bool isPaused = false;
     private bool insideHaram = false;
+
+    private bool menuOpen = false;
+    private bool inventoryOpen = false;
 
 
     // Start is called before the first frame update
@@ -79,11 +83,7 @@ public class PlayerMotor : MonoBehaviour
           }
         }
 
-        if(Input.GetKeyDown(KeyCode.Tab) && !isPaused)
-        {
-            isPaused = true;
-            openInventory.onClick.Invoke();
-        }
+        opencloseInventory();
 
         PauseGame();
         
@@ -192,13 +192,15 @@ public class PlayerMotor : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape) && !isPaused)
         {
+            menuOpen = true;
             Debug.Log("PauseGame");
             pause.onClick.Invoke();
             return;
         }
         // remove next lines if not fixed
-        if(Input.GetKeyDown(KeyCode.Escape) && isPaused)
+        if(Input.GetKeyDown(KeyCode.Escape) && isPaused && !inventoryOpen)
         {
+            menuOpen = false;
             Debug.Log("ResumeGame");
             play.onClick.Invoke();
             return;
@@ -219,7 +221,6 @@ public class PlayerMotor : MonoBehaviour
         //PausePanel.SetActive(false);
         Time.timeScale = 1;
         isPaused = false;
-        
     }
 
     //public void openMap()
@@ -293,6 +294,24 @@ public class PlayerMotor : MonoBehaviour
             Debug.Log("Game over");
             Pause();
             inventoryManager.endPanel.SetActive(true);
+        }
+    }
+
+    public void opencloseInventory()
+    {
+        if(Input.GetKeyDown(KeyCode.Tab) && !isPaused)
+        {
+            inventoryOpen = true;
+            isPaused = true;
+            openInventory.onClick.Invoke();
+            return;
+        }
+        if(Input.GetKeyDown(KeyCode.Tab) && isPaused && !menuOpen)
+        {
+            inventoryOpen = false;
+            isPaused = false;
+            closeInventory.onClick.Invoke();
+            return;
         }
     }
 
