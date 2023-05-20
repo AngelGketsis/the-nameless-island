@@ -22371,8 +22371,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.033926394, y: 0.038079645, z: 0.27120972}
-  m_Center: {x: 0.016273499, y: 0.00775032, z: -0.01979065}
+  m_Size: {x: 0.033926398, y: 0.17820133, z: 0.27120972}
+  m_Center: {x: 0.016273499, y: 0.0032557172, z: -0.01979065}
 --- !u!114 &829127422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28237,6 +28237,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Item: {fileID: 11400000, guid: 9e07cfa699cc5554f8b4094316098acf, type: 2}
+--- !u!65 &1027612141
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027612133}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.47277832, y: 0.06415606, z: 0.9473877}
+  m_Center: {x: 0.022369385, y: 0.039108004, z: -0.010131836}
 --- !u!1 &1028000515
 GameObject:
   m_ObjectHideFlags: 0
@@ -29678,6 +29691,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   useEvents: 1
   promptMessage: Press F for Information  Click to Pick Up
+--- !u!65 &1067436523
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067436517}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07183228, y: 0.086534895, z: 0.0041453433}
+  m_Center: {x: 0.00046081544, y: -0.00065877737, z: -0.000038939157}
 --- !u!1001 &1068857408
 PrefabInstance:
   m_ObjectHideFlags: 0
