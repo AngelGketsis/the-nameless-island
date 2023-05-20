@@ -208,6 +208,19 @@ public class PlayerMotor : MonoBehaviour
         
     }
 
+    public void pausePause()
+    {
+        menuOpen = true;
+        Time.timeScale = 0;
+        isPaused = true;
+    }
+
+    public void pauseInventory()
+    {
+        inventoryOpen = true;
+        Time.timeScale = 0;
+        isPaused = true;
+    }
 
     public void Pause()
     {
@@ -221,6 +234,8 @@ public class PlayerMotor : MonoBehaviour
         //PausePanel.SetActive(false);
         Time.timeScale = 1;
         isPaused = false;
+        inventoryOpen = false;
+        menuOpen = false;
     }
 
     //public void openMap()
