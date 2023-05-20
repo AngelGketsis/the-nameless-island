@@ -39,6 +39,7 @@ public class PlayerMotor : MonoBehaviour
 
     private bool menuOpen = false;
     private bool inventoryOpen = false;
+    private bool hasStarted = false;
 
 
     // Start is called before the first frame update
@@ -83,14 +84,17 @@ public class PlayerMotor : MonoBehaviour
           }
         }
 
-        opencloseInventory();
+        if(hasStarted)
+        {
+            opencloseInventory();
 
-        PauseGame();
-        
-        isGrounded = controller.isGrounded;
-        Respawn();
-        showMap();
-        endGame();
+            PauseGame();
+            
+            isGrounded = controller.isGrounded;
+            Respawn();
+            showMap();
+            endGame();
+        }
     }
 
     //receive the inputs for InputManager.cs and apply them to character controller
@@ -344,5 +348,10 @@ public class PlayerMotor : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     } 
+
+    public void StartGame()
+    {
+        hasStarted = true;
+    }
 
 }
