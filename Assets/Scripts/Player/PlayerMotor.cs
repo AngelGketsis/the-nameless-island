@@ -208,9 +208,28 @@ public class PlayerMotor : MonoBehaviour
         
     }
 
+     public void opencloseInventory()
+    {
+        if(Input.GetKeyDown(KeyCode.Tab) && !isPaused)
+        {
+            inventoryOpen = true;
+            isPaused = true;
+            openInventory.onClick.Invoke();
+            return;
+        }
+        if(Input.GetKeyDown(KeyCode.Tab) && isPaused && !menuOpen)
+        {
+            inventoryOpen = false;
+            isPaused = false;
+            closeInventory.onClick.Invoke();
+            return;
+        }
+    }
+
     public void pausePause()
     {
         menuOpen = true;
+        //inventoryOpen = true;
         Time.timeScale = 0;
         isPaused = true;
     }
@@ -308,27 +327,22 @@ public class PlayerMotor : MonoBehaviour
         {
             Debug.Log("Game over");
             Pause();
+            TurnOnCursor();
             inventoryManager.endPanel.SetActive(true);
         }
     }
 
-    public void opencloseInventory()
-    {
-        if(Input.GetKeyDown(KeyCode.Tab) && !isPaused)
-        {
-            inventoryOpen = true;
-            isPaused = true;
-            openInventory.onClick.Invoke();
-            return;
-        }
-        if(Input.GetKeyDown(KeyCode.Tab) && isPaused && !menuOpen)
-        {
-            inventoryOpen = false;
-            isPaused = false;
-            closeInventory.onClick.Invoke();
-            return;
-        }
-    }
 
+    public void TurnOffCursor()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }  
+
+    public void TurnOnCursor()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    } 
 
 }

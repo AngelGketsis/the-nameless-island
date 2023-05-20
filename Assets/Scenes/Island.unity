@@ -789,6 +789,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &13236145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1109,7 +1121,7 @@ Transform:
   - {fileID: 340588180}
   - {fileID: 690116816}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &18195283
 GameObject:
@@ -1746,6 +1758,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pausePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pauseInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &49708412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1760,6 +1808,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   useEvents: 1
   promptMessage: Press F for Info
+--- !u!4 &49708413 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f46dcb58de314b8429b720831e607926, type: 3}
+  m_PrefabInstance: {fileID: 1561745100}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &55561552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4271,7 +4324,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5ea1fa884b5591f4bafaae2edb30c0fe, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ea1fa884b5591f4bafaae2edb30c0fe, type: 3}
       propertyPath: m_LocalScale.x
@@ -5398,6 +5451,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOffCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &164463143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6357,7 +6422,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6923,7 +6988,7 @@ Transform:
   - {fileID: 712605690}
   - {fileID: 1697883328}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &229870139
 GameObject:
@@ -7043,7 +7108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 494322, guid: bfb5063a60f6ab946b7818053c46d9d2, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 494322, guid: bfb5063a60f6ab946b7818053c46d9d2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7549,6 +7614,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOffCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &241812390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7934,6 +8011,18 @@ MonoBehaviour:
       - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Continue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOffCursor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9707,6 +9796,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pauseInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pausePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &354827373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9761,6 +9886,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Item: {fileID: 11400000, guid: 1ba17df75bd285f43b12904130d82f29, type: 2}
+--- !u!4 &354827382 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 990dfdc0273fc324daa3afc755f28fa1, type: 3}
+  m_PrefabInstance: {fileID: 1103040843}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &355919025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10200,7 +10330,7 @@ Transform:
   - {fileID: 229563748}
   - {fileID: 1260426633}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &371692291
 PrefabInstance:
@@ -10579,6 +10709,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 49708413}
+  - {fileID: 1180010560}
+  - {fileID: 354827382}
   - {fileID: 645555468}
   - {fileID: 1067436516}
   - {fileID: 231214361}
@@ -10594,7 +10727,7 @@ Transform:
   - {fileID: 1123334079}
   - {fileID: 1068969912}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &378787590
 PrefabInstance:
@@ -10810,7 +10943,7 @@ Transform:
   - {fileID: 995466530}
   - {fileID: 442951318}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &383976498
 PrefabInstance:
@@ -11916,6 +12049,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOffCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &435140212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12456,6 +12601,42 @@ MonoBehaviour:
       - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pauseInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pausePause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13698,7 +13879,7 @@ Transform:
   - {fileID: 1955089687}
   - {fileID: 1404226940}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &515138572
 PrefabInstance:
@@ -13961,7 +14142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8098961372029218137, guid: 0b6562cf21b029d46a75c9ab6d8e3087, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8098961372029218137, guid: 0b6562cf21b029d46a75c9ab6d8e3087, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15011,7 +15192,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 283326448161520211, guid: b24b1a08663f5564b9f871faad70eb66, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 283326448161520211, guid: b24b1a08663f5564b9f871faad70eb66, type: 3}
       propertyPath: m_LocalScale.x
@@ -17215,7 +17396,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &644630944
 PrefabInstance:
@@ -18415,6 +18596,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOffCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &700887326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18756,7 +18949,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c740bf7c13f90f14497a8c625d6d96ae, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c740bf7c13f90f14497a8c625d6d96ae, type: 3}
       propertyPath: m_LocalScale.x
@@ -19726,7 +19919,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &750348780
 GameObject:
@@ -21781,7 +21974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 457190, guid: 99a88abdf3ad4d74790fdc2eb99677ee, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 457190, guid: 99a88abdf3ad4d74790fdc2eb99677ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22108,6 +22301,42 @@ MonoBehaviour:
       - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pausePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pauseInventory
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22645,6 +22874,30 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pausePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pauseInventory
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -24733,6 +24986,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOffCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &902931776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25844,7 +26109,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8295701739642420856, guid: 9b78c28f440e80347af3c55f526d2572, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8295701739642420856, guid: 9b78c28f440e80347af3c55f526d2572, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25931,6 +26196,42 @@ MonoBehaviour:
       - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pausePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pauseInventory
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26264,7 +26565,7 @@ Transform:
   - {fileID: 452206763}
   - {fileID: 1170645785}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &958881452
 GameObject:
@@ -27288,7 +27589,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 10e6b27a87b8d1a4e9b27be922314227, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10e6b27a87b8d1a4e9b27be922314227, type: 3}
       propertyPath: m_LocalScale.x
@@ -27401,6 +27702,42 @@ MonoBehaviour:
       - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pausePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pauseInventory
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27999,6 +28336,18 @@ MonoBehaviour:
       - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Continue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOffCursor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29125,7 +29474,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b0685edc39c52ba4785b806dc806f3cd, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b0685edc39c52ba4785b806dc806f3cd, type: 3}
       propertyPath: m_LocalScale.x
@@ -29270,6 +29619,42 @@ MonoBehaviour:
       - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pausePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pauseInventory
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29687,6 +30072,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -30339,11 +30736,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 374098502}
     m_Modifications:
     - target: {fileID: 100000, guid: 990dfdc0273fc324daa3afc755f28fa1, type: 3}
       propertyPath: m_Name
-      value: fi_vil_container_bag01_01
+      value: Bag
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 990dfdc0273fc324daa3afc755f28fa1, type: 3}
       propertyPath: m_Layer
@@ -30351,19 +30748,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 990dfdc0273fc324daa3afc755f28fa1, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 990dfdc0273fc324daa3afc755f28fa1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 443.20444
+      value: -4.0830383
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 990dfdc0273fc324daa3afc755f28fa1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.231578
+      value: 0.9539499
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 990dfdc0273fc324daa3afc755f28fa1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 556.9604
+      value: 69.842834
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 990dfdc0273fc324daa3afc755f28fa1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30371,7 +30768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 990dfdc0273fc324daa3afc755f28fa1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 990dfdc0273fc324daa3afc755f28fa1, type: 3}
       propertyPath: m_LocalRotation.y
@@ -31650,7 +32047,7 @@ RectTransform:
   - {fileID: 2112634924}
   - {fileID: 1124194340}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -31818,6 +32215,18 @@ MonoBehaviour:
       - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Continue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOffCursor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -32515,7 +32924,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnInteract:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pausePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pauseInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1180010557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32530,6 +32987,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   useEvents: 1
   promptMessage: Click To Pick Up
+--- !u!4 &1180010560 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400006, guid: b9432b6a4a78c64449366f08c7196deb, type: 3}
+  m_PrefabInstance: {fileID: 1483986569}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1181435398
 GameObject:
   m_ObjectHideFlags: 0
@@ -33158,6 +33620,18 @@ MonoBehaviour:
       - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Continue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOffCursor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -34563,6 +35037,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOffCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1228374445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35255,6 +35741,18 @@ MonoBehaviour:
       - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Continue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOffCursor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -37148,7 +37646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f61e2c06933fe5145a42eccb1e13acc7, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f61e2c06933fe5145a42eccb1e13acc7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39067,7 +39565,7 @@ Transform:
   - {fileID: 371692294}
   - {fileID: 43825758}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1367440722
 PrefabInstance:
@@ -39876,7 +40374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919970558408372065, guid: 3695c423332b8a142a1d5c73828e2ac2, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 919970558408372065, guid: 3695c423332b8a142a1d5c73828e2ac2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -40510,7 +41008,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 7052a82dc51962448b4bd3deefec0ed0, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7052a82dc51962448b4bd3deefec0ed0, type: 3}
       propertyPath: m_LocalScale.z
@@ -40935,6 +41433,42 @@ MonoBehaviour:
       - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pauseInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pausePause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -41457,7 +41991,7 @@ Transform:
   - {fileID: 1560524050}
   - {fileID: 64380222}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1464506604
 GameObject:
@@ -42064,7 +42598,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 374098502}
     m_Modifications:
     - target: {fileID: 100006, guid: b9432b6a4a78c64449366f08c7196deb, type: 3}
       propertyPath: m_Name
@@ -42076,19 +42610,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: b9432b6a4a78c64449366f08c7196deb, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: b9432b6a4a78c64449366f08c7196deb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 449.47812
+      value: 2.1906433
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: b9432b6a4a78c64449366f08c7196deb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.07
+      value: -2.2076283
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: b9432b6a4a78c64449366f08c7196deb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 440.38
+      value: -46.73755
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: b9432b6a4a78c64449366f08c7196deb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -42490,7 +43024,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3a400bdb105f6ef4e97350522871d9de, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3a400bdb105f6ef4e97350522871d9de, type: 3}
       propertyPath: m_LocalScale.x
@@ -43534,15 +44068,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 374098502}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f46dcb58de314b8429b720831e607926, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f46dcb58de314b8429b720831e607926, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9
+      value: 0.89999986
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f46dcb58de314b8429b720831e607926, type: 3}
       propertyPath: m_LocalScale.y
@@ -43550,19 +44084,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f46dcb58de314b8429b720831e607926, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.9
+      value: 0.89999986
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f46dcb58de314b8429b720831e607926, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 489.131
+      value: 41.843536
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f46dcb58de314b8429b720831e607926, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.998171
+      value: -0.2794571
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f46dcb58de314b8429b720831e607926, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 531.955
+      value: 44.837463
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f46dcb58de314b8429b720831e607926, type: 3}
       propertyPath: m_LocalRotation.w
@@ -43812,7 +44346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 486314, guid: 3c0c424ddafa2834686e636738b21e86, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 486314, guid: 3c0c424ddafa2834686e636738b21e86, type: 3}
       propertyPath: m_LocalScale.y
@@ -45269,6 +45803,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pauseInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pausePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1613998706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46305,7 +46875,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 450912, guid: b36af59f34432cc4e84faf493a39a92b, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 450912, guid: b36af59f34432cc4e84faf493a39a92b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -46538,6 +47108,42 @@ MonoBehaviour:
       - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pauseInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pausePause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -46840,7 +47446,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1685328035
 GameObject:
@@ -46888,7 +47494,7 @@ Transform:
   - {fileID: 332824713}
   - {fileID: 114707851}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1687946909 stripped
 GameObject:
@@ -47127,7 +47733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 485756, guid: 2b736b1b73539b946aaedb5fd5b458e4, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 485756, guid: 2b736b1b73539b946aaedb5fd5b458e4, type: 3}
       propertyPath: m_LocalScale.x
@@ -47427,6 +48033,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOffCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1701213569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47535,7 +48153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9048529922822917024, guid: 0ec1c69bd47ad864f96cc2b516f6cd4b, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9048529922822917024, guid: 0ec1c69bd47ad864f96cc2b516f6cd4b, type: 3}
       propertyPath: m_LocalScale.x
@@ -47963,6 +48581,18 @@ MonoBehaviour:
       - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Continue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOffCursor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -48621,7 +49251,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2697c2584a6634d48afdcfb9c9bb2252, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2697c2584a6634d48afdcfb9c9bb2252, type: 3}
       propertyPath: m_LocalScale.x
@@ -48873,6 +49503,42 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pauseInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pausePause
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -49760,7 +50426,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 08ab5b45a70e2f64c9e443830da6c2a4, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 08ab5b45a70e2f64c9e443830da6c2a4, type: 3}
       propertyPath: m_LocalScale.x
@@ -50150,7 +50816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 457190, guid: 99a88abdf3ad4d74790fdc2eb99677ee, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 457190, guid: 99a88abdf3ad4d74790fdc2eb99677ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50369,6 +51035,18 @@ MonoBehaviour:
       - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Continue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOffCursor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -51592,6 +52270,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1849158538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51970,6 +52660,18 @@ MonoBehaviour:
       - m_Target: {fileID: 968120572}
         m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
         m_MethodName: Continue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOffCursor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -52404,7 +53106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6614323253151288281, guid: 21a1357bdc5263c43b565f25ebcd2d2b, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6614323253151288281, guid: 21a1357bdc5263c43b565f25ebcd2d2b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53173,6 +53875,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pausePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pauseInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1899535085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53272,7 +54010,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e61f8f863113cad44a7921c61161078c, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e61f8f863113cad44a7921c61161078c, type: 3}
       propertyPath: m_LocalScale.x
@@ -53809,6 +54547,42 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pauseInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pausePause
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -55397,6 +56171,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOffCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1998187253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56491,6 +57277,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pausePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pauseInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2045590518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57045,7 +57867,7 @@ Transform:
   - {fileID: 704857466}
   - {fileID: 1915495464}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2048918927
 PrefabInstance:
@@ -58742,6 +59564,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: TurnOnCursor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pauseInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 968120572}
+        m_TargetAssemblyTypeName: PlayerMotor, Assembly-CSharp
+        m_MethodName: pausePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2101699765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60093,7 +60951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 499834, guid: 38d61c06074002f4abcdf441b5283261, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 499834, guid: 38d61c06074002f4abcdf441b5283261, type: 3}
       propertyPath: m_LocalPosition.x
